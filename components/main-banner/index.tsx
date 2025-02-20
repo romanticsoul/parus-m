@@ -1,12 +1,31 @@
+import Image from 'next/image'
+import { Button } from '../ui/button'
+
 export function MainBanner() {
   return (
-    <section className="h-[540px] bg-gradient-to-br from-cyan-300 to-blue-600">
-      <div className="container flex size-full items-center">
+    <section className="h-[640px] bg-gradient-to-br from-blue-400 to-blue-900">
+      <div className="container flex size-full items-center justify-evenly">
+        <div className="relative aspect-square h-full">
+          <Image
+            quality={100}
+            className="object-contain py-12"
+            src="/esim.png"
+            fill
+            alt="Рекламное изображение подключения к esim"
+          />
+        </div>
         <div className="text-white">
-          <h1 className="mb-2 text-4xl font-semibold">
-            Подключай eSIM от Парус-М
+          <h1 className="mb-2 text-6xl font-semibold">
+            Подключай eSIM
+            <br />
+            за 5 минут
           </h1>
-          <p className="text-xl">Все та же сим-карта, только без пластика</p>
+          <p className="mb-8 text-2xl">
+            Все та же сим-карта, только без пластика
+          </p>
+          <Button size="xl" variant="secondary">
+            Подключить
+          </Button>
         </div>
       </div>
     </section>

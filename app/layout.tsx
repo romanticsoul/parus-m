@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Rubik as Font } from 'next/font/google'
 import './globals.css'
 import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
 
 const font = Font({
   variable: '--font-sans',
@@ -19,12 +20,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ru">
+    <html lang="ru" className="scroll-smooth">
       <body
         className={`${font.variable} ${font.variable} font-sans antialiased`}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
