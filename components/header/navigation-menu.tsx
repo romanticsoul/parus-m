@@ -14,7 +14,7 @@ export function NavigationMenu() {
           <Link href="#">Перенести номер</Link>
         </li>
         <li>
-          <Link href="#">О компании</Link>
+          <Link href="/about">О компании</Link>
         </li>
       </ul>
     </nav>

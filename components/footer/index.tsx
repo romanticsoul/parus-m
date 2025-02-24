@@ -41,7 +41,7 @@ export function Footer() {
           </div>
         </nav>
         <div className="text-base font-medium">
-          © Парус-М телеком, 2020 — {currentYear}
+          © ПарусМобайл, 2020 — {currentYear}
         </div>
       </div>
     </footer>
