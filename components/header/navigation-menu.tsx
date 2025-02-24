@@ -5,13 +5,13 @@ export function NavigationMenu() {
     <nav className="font-medium">
       <ul className="flex gap-8">
         <li>
-          <Link href="#tariffs">Тарифы</Link>
+          <Link href="/#tariffs">Тарифы</Link>
         </li>
         <li>
           <Link href="#">Новости</Link>
         </li>
         <li>
-          <Link href="#">Перенести номер</Link>
+          <Link href="/mnp">Перенести номер</Link>
         </li>
         <li>
           <Link href="/about">О компании</Link>

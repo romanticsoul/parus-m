@@ -55,13 +55,17 @@ export function TilesCardSection() {
             <br />
             сим-карту не выходя из дома
           </p>
-          <Button className="mx-auto mt-3" size="lg">
+          <Button
+            variant="secondary"
+            className="mx-auto mt-3 font-medium"
+            size="lg"
+          >
             Оформить eSIM
           </Button>
           <div className="relative mt-16 flex-1">
             <Image
               src="/e_desktop.png"
-              alt="Изображение блакнота"
+              alt="Изображение блокнота"
               fill
               quality={100}
               className="object-contain"

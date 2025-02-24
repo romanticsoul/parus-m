@@ -1,13 +1,13 @@
-import { MainBanner } from '@/components/main-banner'
-import { TariffsSection } from '@/components/tariffs-section'
-import { TilesCardSection } from '@/components/tiles-card-section'
+import { CalendarCheck2, Map } from 'lucide-react'
 
-export default function Home() {
+export default function About() {
   return (
-    <main className="grid py-16">
+    <main className="grid gap-10 pt-16">
+      <h1 className="container text-5xl font-semibold">
+        Информация о Компании
+      </h1>
       <section className="container grid grid-cols-12 gap-10">
         <div className="col-span-8 grid gap-6 text-lg">
-          <h1 className="mb-4 text-5xl font-semibold">Информация о Компании</h1>
           <p>
             ПарусМобайл — это мобильная связь, созданная с заботой о человеке.
             Поэтому нам так важно быть удобным и безопасным оператором, которому
@@ -40,13 +40,82 @@ export default function Home() {
             общество вперед.
           </p>
         </div>
-        <div className="col-span-4">
-          <div className="flex">
+        <div className="col-span-4 flex flex-col gap-8">
+          <div className="flex items-center gap-6">
+            <CalendarCheck2 className="size-8" />
             <div className="flex flex-col">
-              <h2></h2>
+              <h2 className="text-4xl font-semibold">2020</h2>
+              <p>год основания</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-6">
+            <Map className="size-8" />
+            <div className="flex flex-col">
+              <h2 className="text-4xl font-semibold">86</h2>
+              <p>регионов</p>
             </div>
           </div>
         </div>
+      </section>
+      <section className="container">
+        <div className="rounded-3xl border bg-secondary p-12">
+          <h3 className="mb-4 text-2xl font-semibold">Реквизиты</h3>
+          <div className="grid grid-cols-3 text-lg [&>div]:grid [&>div]:gap-4 [&_h4]:font-semibold">
+            <div>
+              <div>
+                <h4>Наименование:</h4>
+                <p>ООО ПарусМобайл-Телеком»</p>
+              </div>
+              <div>
+                <h4>Адрес:</h4>
+                <p>117997, г. Москва, ул. Вавилова д.19</p>
+              </div>
+              <div>
+                <h4>Контактный номер:</h4>
+                <p>+7 (800) 555-35-35</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4>ОГРН:</h4>
+                <p>100000000000</p>
+              </div>
+              <div>
+                <h4>ИНН:</h4>
+                <p>7700000000</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h4>Банковские реквизиты:</h4>
+                <p>
+                  ООО «ПарусМобайл-Телеком»
+                  <br />
+                  р/с 40700000000020000115 в ПАО Сбербанк,
+                  <br />
+                  к/с 30000000000000000000,
+                  <br />
+                  БИК 044000005
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="container">
+        <h2 className="mb-4 text-2xl font-medium">
+          Информация для правоохранительных органов
+        </h2>
+        <p className="text-lg">
+          Сотрудники правоохранительных органов могут направлять официальные
+          запросы оператору связи ООО «ПарусМобайл-Телеком» для получения
+          информации по абонентскому номеру и его владельце в порядке и на
+          условиях, предусмотренных действующим законодательством Российской
+          Федерации, по адресам электронной почты:{' '}
+          <a href="mailto:gos@parusmobile.ru" className="underline">
+            gos@parusmobile.ru
+          </a>
+        </p>
       </section>
     </main>
   )

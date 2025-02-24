@@ -16,7 +16,7 @@ export function Footer() {
           </p>
           <p>
             <Link className="text-foreground" href="mailto:support@parusm.com">
-              support@parusm.com
+              support@parusmobile.ru
             </Link>
           </p>
         </div>
