@@ -8,7 +8,7 @@ export function NavigationMenu() {
           <Link href="/#tariffs">Тарифы</Link>
         </li>
         <li>
-          <Link href="#">Новости</Link>
+          <Link href="/news">Новости</Link>
         </li>
         <li>
           <Link href="/mnp">Перенести номер</Link>
